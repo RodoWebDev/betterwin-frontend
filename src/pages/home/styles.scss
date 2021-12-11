@@ -1,0 +1,156 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-image: url('../../assets/imgs/background.png');
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+  background-position-x: center;
+  .top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6D7278;
+    width: 100%;
+    height: 40px;
+    .top-desc {
+      margin: 0;
+      font-family: SF Pro Text;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: -0.3px;
+      color: #000000;
+    }
+  }
+  .title-img {
+    height: 172px;
+    margin: 60px 0 40px 0;
+  }
+  .header-logo {
+    width: 250px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .download_btn {
+    width: 335px;
+    height: 50px;
+    background: linear-gradient(316.32deg, #A3844C 4.07%, #9C7E49 16.2%, #745D36 90.34%);
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.588205), 0px 0px 16px rgba(79, 79, 85, 0.539827);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: unset;
+    margin-bottom: 10px;
+    img {
+      margin-right: 20px;
+    }
+    &.bottom {
+      margin-top: -20px;
+    }
+  }
+  .apps_row {
+    display: flex;
+    .app_container {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 20px;
+      max-width: 335px;
+      .app-img {
+        width: 335px;
+      }
+      .description {
+        position: relative;
+        padding: 15px 20px;
+        margin-top: -40px;
+        background: linear-gradient(62.29deg, #0D0E0E 7.86%, #1F2026 94.65%);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+        border-radius: 15px;
+        min-height: 150px;
+        .app-no {
+          position: absolute;
+          top: 0;
+          left: 5px;
+          font-family: SF Pro Text;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 72px;
+          line-height: 86px;
+          color: #000000;
+          margin: 0;
+          line-height: 100%;
+        }
+        .desc-container {
+          z-index: 1;
+          position: absolute;
+          width: 300px;
+          .title {
+            color: #F0C87E;
+            font-family: SF Pro Text;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 19px;
+            margin: 0;
+            margin-bottom: 10px;
+            z-index: 1;
+          }
+          .desc {
+            font-family: Avenir;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 16px;
+            color: #FFFFFF;
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
+  .qrcode-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .qrcode-img {
+      width: 185px;
+    }
+    .download_btn {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 20px;
+    .top-bar {
+      width: 100vw;
+      margin-top: -20px;
+    }
+    .title-img {
+      height: 63px;
+    }
+    .download_btn {
+      width: 100%;
+    }
+    .apps_row {
+      flex-direction: column;
+    }
+    .qrcode-container {
+      flex-direction: column-reverse;
+      .download_btn {
+        margin-top: 0;
+      }
+    }
+  }
+}

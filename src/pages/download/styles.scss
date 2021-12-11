@@ -1,0 +1,135 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 40px;
+  .header-logo {
+    width: 250px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .header-title {
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .download-desc {
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #6D7278;
+    a {
+      text-decoration: underline;
+      margin-left: 5px;
+      cursor: pointer;
+      color: unset;
+    }
+  }
+  .steps-to-install {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(316.32deg, #A3844C 4.07%, #9C7E49 16.2%, #745D36 90.34%);
+    .step-desc {
+      font-family: SF Pro Text;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      letter-spacing: -0.3px;
+      color: #FFFFFF;
+      margin: 0;
+    }
+  }
+  .steps {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    .background-1 {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 35px;
+    }
+    .background-2 {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      bottom: 100px;
+    }
+    .steps_container {
+      max-width: 673px;
+      z-index: 1;
+      .step {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+        .left {
+          display: flex;
+          flex-direction: column;
+          .step_left {
+            width: 60px;
+            margin-left: -12px;
+          }
+          .step_desc {
+            font-family: SF Pro Text;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            letter-spacing: -0.3px;
+            color: #FFFFFF;
+            margin: 0;
+          }
+        }
+        &:first-child {
+          margin-top: 47px;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .header-title {
+      font-size: 21px;
+      padding: 0 21px;
+      line-height: 100%;
+    }
+    .download-desc {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+    .steps {
+      .steps_container {
+        .step {
+          flex-direction: column;
+          .left {
+            flex-direction: row;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
