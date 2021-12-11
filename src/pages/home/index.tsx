@@ -22,7 +22,7 @@ const Home = () => {
         </div>
         <img src={TitleImg} className="title-img" alt="title-img" />
         <img src={BetterWinImg} className="header-logo" alt="BetterWin-img" />
-        <a className="download_btn" href={`${process.env.REACT_APP_URL}/packages/download/betterwin`}>
+        <a className="download_btn" href="/download">
           <img src={Download} className="download-img" alt="download-img" />
           Get Better Win App
         </a>
@@ -92,7 +92,7 @@ const Home = () => {
         </div>
         <div className="qrcode-container">
           <img src={QRCode} className="qrcode-img" alt="download-img" />
-          <a className="download_btn bottom" href={`${process.env.REACT_APP_URL}/packages/download/betterwin`}>
+          <a className="download_btn bottom" href="/download">
             <img src={Download} className="download-img" alt="download-img" />
             Get Better Win App
           </a>
